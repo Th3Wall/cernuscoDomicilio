@@ -1,3 +1,5 @@
+![Image of Cernusco Domicilio](https://imgur.com/yCYr0yb)
+
 # Cernusco a Domicilio
 > If you want to make the same proj for your city, the only thing i ask is to fork the [main repo](https://github.com/tomma5o/ferraraDomicilio) for make it yours.
 > Thanks!
