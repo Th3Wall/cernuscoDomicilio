@@ -10,7 +10,7 @@ import Form from './routes/form.js';
 
 // Constants
 const SEARCH =
-	'https://gist.githubusercontent.com/Th3Wall/a1737863a43420319c0fea4515245430/raw/6ed60a2f686799cf68af51446b192a5f82b3bb0d/CernuscoDomicilio.json';
+	'https://gist.githubusercontent.com/Th3Wall/a1737863a43420319c0fea4515245430/raw/CernuscoDomicilio.json';
 
 export default class App extends Component {
 
