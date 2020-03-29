@@ -2,6 +2,8 @@ import { useState } from 'preact/hooks';
 
 export const ListItem = ({ name, tel, site, mail, note }) => {
 	const [infoVisible, setInfoVisible] = useState(false);
+	const encoded = encodeURIComponent(name);
+	const searchUrl = `https://www.google.com/search?q=${encoded}%20Cernusco%20Sul%20Naviglio`;
 
 	function handleClick() {
 		setInfoVisible(!infoVisible);
@@ -11,7 +13,7 @@ export const ListItem = ({ name, tel, site, mail, note }) => {
 		<div class="rounded-lg border bg-gray-200 p-4 md:p-5 my-5 text-md lg:text-xl font-semibold text-gray-700">
 			<div class="flex justify-between items-center">
 				<span>
-					<a class="hover:underline" href={`https://www.google.com/search?q=${name}%20Cernusco%20Sul%20Naviglio`} target="_blank" rel="noopener noreferrer">{name}</a>
+					<a class="hover:underline" href={searchUrl} target="_blank" rel="noopener noreferrer">{name}</a>
 				</span>
 				<div class="flex">
 					{note && (
