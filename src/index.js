@@ -9,8 +9,7 @@ import Home from './routes/home.js';
 import Form from './routes/form.js';
 
 // Constants
-const SEARCH =
-	'https://gist.githubusercontent.com/Th3Wall/a1737863a43420319c0fea4515245430/raw/CernuscoDomicilio.json';
+const SEARCH = process.env.PREACT_APP_DATA_SOURCE;
 
 export default class App extends Component {
 
@@ -55,7 +54,7 @@ export default class App extends Component {
 					<span class="block sm:inline-block" role="img" aria-label="biker">
 						🚴&nbsp;
 					</span>
-					Cernusco a Domicilio
+					{`${process.env.PREACT_APP_CITY} a Domicilio`}
 				</h1>
 				<Router onChange={this.handleRoute}>
 					<Home path="/" results={results} />
