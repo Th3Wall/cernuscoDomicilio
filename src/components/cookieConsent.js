@@ -6,6 +6,7 @@ export const CookieConsent = () => {
     const [cookieVisible, setCookieVisible] = useState(true);
 
     function handleClick(e) {
+        localStorage.setItem(`${process.env.PREACT_APP_CITY}Domicilio_PPCookie`, "cookieSet");
         setCookieVisible(!cookieVisible);
     }
 
