@@ -6,7 +6,7 @@ export const Dialog = ({ isOpen, telNumbers, emailContacts, closePopup }) => {
 			onClick={closePopup}
 		>
 			<div
-				class="absolute w-5/6 bg-white rounded-lg p-6 shadow-lg"
+				class="absolute w-5/6 max-w-screen-sm mx-auto bg-white rounded-lg p-6 shadow-lg"
 				style={{top: "50%", left: "50%", transform: "translate(-50%, -50%)"}}
 			>
 				{telNumbers && (
