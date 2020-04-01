@@ -55,8 +55,8 @@ export default class Home extends Component {
 							))
 					}
 				</div>
-				<div>
-					<p class="mt-10 mb-8 text-center block">Developed with ❤️ by <a class="text-orange-500" href={process.env.PREACT_APP_DEV_LINK}>{process.env.PREACT_APP_DEV_NAME}</a></p>
+				<div class="flex flex-col items-center mt-10 mb-8">
+					<p class="mb-6 text-center block">Developed with ❤️ by <a class="text-orange-500" href={process.env.PREACT_APP_DEV_LINK}>{process.env.PREACT_APP_DEV_NAME}</a></p>
 					<a href="https://www.iubenda.com/privacy-policy/66156653" class="iubenda-black iubenda-embed" title="Privacy Policy ">Privacy Policy</a>
 				</div>
 			</Fragment>
