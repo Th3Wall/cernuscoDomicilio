@@ -56,7 +56,7 @@ export default class Home extends Component {
 					}
 				</div>
 				<div>
-					<p class="my-10 text-center">Developed with ❤️ by <a class="text-orange-500" href={process.env.PREACT_APP_DEV_LINK}>{process.env.PREACT_APP_DEV_NAME}</a></p>
+					<p class="mt-10 mb-8 text-center">Developed with ❤️ by <a class="text-orange-500" href={process.env.PREACT_APP_DEV_LINK}>{process.env.PREACT_APP_DEV_NAME}</a></p>
 				</div>
 			</Fragment>
 		);
