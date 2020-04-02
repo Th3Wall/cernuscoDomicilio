@@ -6,8 +6,8 @@
 
 ## How to
 
-1. Change the specific label related to me and my city are inside the `.env` file, if you change that the js is now clean ;)
-2. Change the city in `template.html` file
+1. Change the specific label related to me and my city are inside the `.env` file, if you change that the js will be clean ;)
+2. Change the city in the `template.html` file
 3. Change the **name** and **short_name** inside `manifest.json`
 4. Change the **name** inside `package.json`
 
@@ -23,12 +23,23 @@ When you add your gist remember to delete the last hash because points directly 
 + https://gist.githubusercontent.com/Th3Wall/a1737863a43420319c0fea4515245430/raw/CernuscoDomicilio.json
 ```
 
-## Deploy
+## Netlify deploy & configuration
 
-The site is developed with some specific https://netlify.com apis.
-And if you want to add analytics just put it in your netlify admin panel
+> The site is developed with some specific https://netlify.com apis.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3cb09be5-e116-4f42-a3b3-b95c2402633f/deploy-status)](https://app.netlify.com/sites/cernuscodomicilio/deploys)
+
+### Deploy configuration steps
+
+1. Connect your GitHub account to Netlify
+3. Select the project
+2. In Settings → Build & Deploy → Set **Build command** to : **_npm run build_**
+3. In Settings → Build & Deploy → Set **Publish directory** to : **_build_**
+
+### Google analytics setup
+
+In **Settings** → Build & Deploy → Post processing → Snippet injection: you can add here your GAnalytics snippet
+
 
 ## CLI Commands
 
