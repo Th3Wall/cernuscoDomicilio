@@ -57,9 +57,9 @@ export default class Home extends Component {
 					{Object.keys(stores).map(key => (
 						<button
 							onClick={this.handleCategoryFilter(key)}
-							class={`m-1 flex-grow-0 flex-shrink-0 md:inline-block items-center border border-blue-500 py-2 px-4 rounded-full ${
+							class={`m-1 flex-grow-0 flex-shrink-0 md:inline-block items-center border border-blue-500 py-2 px-4 rounded-full outline-none focus:outline-none active:outline-none ${
 								key === categoryFilter
-									? "bg-blue-500 hover:bg-blue-500 text-white outline-none focus:outline-none active:outline-none text-white"
+									? "bg-blue-500 hover:bg-blue-500 text-white text-white"
 									: "bg-white hover:bg-blue-500 hover:text-white"
 							}`}
 						>
