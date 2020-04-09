@@ -13,7 +13,7 @@ export default class Home extends Component {
 		this.setState({ filter: text });
 	};
 
-	handleCategoryFilter = key => _ => {
+	handleCategoryFilter = key => _ => { // eslint-disable-line no-unused-vars
 		if (key === this.state.categoryFilter) {
 			return this.setState({ categoryFilter: null });
 		}
@@ -81,7 +81,8 @@ export default class Home extends Component {
 					}
 				</div>
 				<div class="flex flex-col items-center mt-10 mb-8">
-					<p class="mb-6 text-center block">Developed with ❤️ by <a class="text-orange-500" href={process.env.PREACT_APP_DEV_LINK}>{process.env.PREACT_APP_DEV_NAME}</a></p>
+					<p class="mb-3 text-center block">Developed with ❤️ by <a class="text-orange-500" href={process.env.PREACT_APP_DEV_LINK}>{process.env.PREACT_APP_DEV_NAME}</a></p>
+					<a class="mb-3" href='https://ko-fi.com/V7V51LF6F' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 					<a href="https://www.iubenda.com/privacy-policy/66156653" class="iubenda-black iubenda-embed" title="Privacy Policy ">Privacy Policy</a>
 				</div>
 			</Fragment>
