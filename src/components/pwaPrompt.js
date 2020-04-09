@@ -55,9 +55,8 @@ const stylePrompt = {
 };
 
 const Prompt = ({visible, closePopup}) => (
-	<div 
-		ref={ref} 
-		style={stylePrompt}
+	<div
+		style = {stylePrompt} 
 		class={`fixed p-2 w-11/12 bottom-0 rounded-lg backdrop max-w-md border border-gray-500 ${visible ? '' : 'hidden'}`}
 	>
 		<div class="flex justify-between items-center border-b border-gray-500 p-2">
