@@ -57,9 +57,9 @@ export default class Home extends Component {
 					{Object.keys(stores).map(key => (
 						<button
 							onClick={this.handleCategoryFilter(key)}
-							class={`m-1 flex-grow-0 flex-shrink-0 md:inline-block items-center border border-blue-500 py-2 px-4 rounded-full ${
+							class={`m-1 flex-grow-0 flex-shrink-0 md:inline-block items-center border border-blue-500 py-2 px-4 rounded-full outline-none focus:outline-none active:outline-none ${
 								key === categoryFilter
-									? "bg-blue-500 hover:bg-blue-500 text-white outline-none focus:outline-none active:outline-none text-white"
+									? "bg-blue-500 hover:bg-blue-500 text-white text-white"
 									: "bg-white hover:bg-blue-500 hover:text-white"
 							}`}
 						>
@@ -81,7 +81,7 @@ export default class Home extends Component {
 					}
 				</div>
 				<div class="flex flex-col items-center mt-10 mb-8">
-					<p class="mb-3 text-center block">Developed with ❤️ by <a class="text-orange-500" href={process.env.PREACT_APP_DEV_LINK}>{process.env.PREACT_APP_DEV_NAME}</a></p>
+					<p class="mb-3 text-center block">Developed with ❤️ by <a class="text-orange-500 hover:text-orange-700" href={process.env.PREACT_APP_DEV_LINK}>{process.env.PREACT_APP_DEV_NAME}</a></p>
 					<a class="mb-3" href='https://ko-fi.com/V7V51LF6F' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 					<a href="https://www.iubenda.com/privacy-policy/66156653" class="iubenda-black iubenda-embed" title="Privacy Policy ">Privacy Policy</a>
 				</div>
