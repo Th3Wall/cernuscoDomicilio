@@ -19,6 +19,7 @@ module.exports = {
             },
             red: {
 				300: 'var(--red-300)',
+				500: 'var(--red-500)',
 				700: 'var(--red-700)',
 				800: 'var(--red-800)',
 			},
